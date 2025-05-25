@@ -117,7 +117,7 @@ export default function SchoolProfilePage() {
                   displayedNeeds.map((need, index) => (
                     <button
                         key={index}
-                        onClick={() => router.push(`/donate?schoolId=${school.id}&item=${encodeURIComponent(need.name)}`)}
+                        onClick={() => router.push(`/donate?item=${encodeURIComponent(need.name)}&schoolId=${school.id}`)}
                         className="w-full text-left rounded border p-3 flex justify-between items-center border-gray-300 bg-white hover:bg-indigo-50 transition"
                     >
                       <span className="font-medium text-gray-800 underline">{need.name}</span>
